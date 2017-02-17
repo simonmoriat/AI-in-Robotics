@@ -1,3 +1,4 @@
+#Monte carlo localization
 
 # probability of sensor being correct or miss
 pHit = 0.6
@@ -46,7 +47,7 @@ def move(p, U):
     return q
 
 for x in range(0,len(measurements)):
-    p = sense(p,measurements[x]) 
-    p = move(p, motions[x])   
+    p = sense(p,measurements[x])
+    p = move(p, motions[x])
 
 print p
